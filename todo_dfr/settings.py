@@ -25,7 +25,7 @@ SECRET_KEY = 'jgwmwie+lolz8)d5v^+gjtj-rb#@67amef)0^xr33ig&!*bi#s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['drf-ajax-drf.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
