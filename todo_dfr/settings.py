@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'jgwmwie+lolz8)d5v^+gjtj-rb#@67amef)0^xr33ig&!*bi#s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'todo_dfr.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['drf-ajax-drf.herokuapp.com','127.0.0.1'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
