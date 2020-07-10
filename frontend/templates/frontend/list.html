@@ -142,6 +142,7 @@
 			fetch(url)
 			.then((resp) => resp.json())
 			.then(function(data){
+				console.log('Data:', data)
 
 				var list = data
 				for (var i in list){
@@ -226,6 +227,7 @@
 		var form = document.getElementById('form-wrapper')
 		form.addEventListener('submit', function(e){
 			e.preventDefault()
+			console.log('Form submitted')
 			var url = 'http://127.0.0.1:8000/api/task-create/'
 			if (activeItem != null){
 				var url = `http://127.0.0.1:8000/api/task-update/${activeItem.id}/`
@@ -240,7 +242,6 @@
 				headers:{
 					'Content-type':'application/json',
 					'X-CSRFToken':csrftoken,
-					"Access-Control-Allow-Origin": "*",
 				},
 				body:JSON.stringify({'title':title})
 			}
